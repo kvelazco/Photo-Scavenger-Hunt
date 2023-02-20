@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		21A9965C29A2D7A000F05387 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9965B29A2D7A000F05387 /* AppDelegate.swift */; };
 		21A9965E29A2D7A000F05387 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9965D29A2D7A000F05387 /* SceneDelegate.swift */; };
-		21A9966029A2D7A000F05387 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9965F29A2D7A000F05387 /* ViewController.swift */; };
+		21A9966029A2D7A000F05387 /* HuntListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9965F29A2D7A000F05387 /* HuntListViewController.swift */; };
 		21A9966329A2D7A000F05387 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A9966129A2D7A000F05387 /* Main.storyboard */; };
 		21A9966529A2D7A300F05387 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21A9966429A2D7A300F05387 /* Assets.xcassets */; };
 		21A9966829A2D7A300F05387 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A9966629A2D7A300F05387 /* LaunchScreen.storyboard */; };
+		21A9967029A2D96D00F05387 /* HuntCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9966F29A2D96D00F05387 /* HuntCell.swift */; };
+		21A9967529A2DBF800F05387 /* Hunt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9967429A2DBF800F05387 /* Hunt.swift */; };
+		21A9967829A2ED4300F05387 /* HuntDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9967729A2ED4300F05387 /* HuntDetailViewController.swift */; };
+		21A9967A29A2F15B00F05387 /* HuntAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9967929A2F15B00F05387 /* HuntAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21A9965829A2D7A000F05387 /* Photo Scavenger Hunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Scavenger Hunt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21A9965B29A2D7A000F05387 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21A9965D29A2D7A000F05387 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		21A9965F29A2D7A000F05387 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21A9965F29A2D7A000F05387 /* HuntListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntListViewController.swift; sourceTree = "<group>"; };
 		21A9966229A2D7A000F05387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21A9966429A2D7A300F05387 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21A9966729A2D7A300F05387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21A9966929A2D7A300F05387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21A9966F29A2D96D00F05387 /* HuntCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntCell.swift; sourceTree = "<group>"; };
+		21A9967429A2DBF800F05387 /* Hunt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hunt.swift; sourceTree = "<group>"; };
+		21A9967729A2ED4300F05387 /* HuntDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntDetailViewController.swift; sourceTree = "<group>"; };
+		21A9967929A2F15B00F05387 /* HuntAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuntAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		21A9965A29A2D7A000F05387 /* Photo Scavenger Hunt */ = {
 			isa = PBXGroup;
 			children = (
+				21A9967129A2DBA600F05387 /* Hunt List */,
+				21A9967629A2ECFE00F05387 /* Hunt Detail */,
+				21A9967329A2DBDC00F05387 /* Models */,
+				21A9966129A2D7A000F05387 /* Main.storyboard */,
 				21A9965B29A2D7A000F05387 /* AppDelegate.swift */,
 				21A9965D29A2D7A000F05387 /* SceneDelegate.swift */,
-				21A9965F29A2D7A000F05387 /* ViewController.swift */,
-				21A9966129A2D7A000F05387 /* Main.storyboard */,
 				21A9966429A2D7A300F05387 /* Assets.xcassets */,
 				21A9966629A2D7A300F05387 /* LaunchScreen.storyboard */,
 				21A9966929A2D7A300F05387 /* Info.plist */,
 			);
 			path = "Photo Scavenger Hunt";
+			sourceTree = "<group>";
+		};
+		21A9967129A2DBA600F05387 /* Hunt List */ = {
+			isa = PBXGroup;
+			children = (
+				21A9965F29A2D7A000F05387 /* HuntListViewController.swift */,
+				21A9966F29A2D96D00F05387 /* HuntCell.swift */,
+			);
+			path = "Hunt List";
+			sourceTree = "<group>";
+		};
+		21A9967329A2DBDC00F05387 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				21A9967429A2DBF800F05387 /* Hunt.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		21A9967629A2ECFE00F05387 /* Hunt Detail */ = {
+			isa = PBXGroup;
+			children = (
+				21A9967729A2ED4300F05387 /* HuntDetailViewController.swift */,
+				21A9967929A2F15B00F05387 /* HuntAnnotationView.swift */,
+			);
+			path = "Hunt Detail";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21A9966029A2D7A000F05387 /* ViewController.swift in Sources */,
+				21A9967029A2D96D00F05387 /* HuntCell.swift in Sources */,
+				21A9966029A2D7A000F05387 /* HuntListViewController.swift in Sources */,
+				21A9967829A2ED4300F05387 /* HuntDetailViewController.swift in Sources */,
+				21A9967A29A2F15B00F05387 /* HuntAnnotationView.swift in Sources */,
+				21A9967529A2DBF800F05387 /* Hunt.swift in Sources */,
 				21A9965C29A2D7A000F05387 /* AppDelegate.swift in Sources */,
 				21A9965E29A2D7A000F05387 /* SceneDelegate.swift in Sources */,
 			);
